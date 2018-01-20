@@ -122,13 +122,14 @@ public class Robot extends IterativeRobot {
 	@Override
 	public void teleopPeriodic() {
 		Scheduler.getInstance().run();
-		SmartDashboard.putNumber("PDP0", RobotMap.pdp.getCurrent(0));
-		SmartDashboard.putNumber("PDP1", RobotMap.pdp.getCurrent(1));
-		SmartDashboard.putNumber("PDP2", RobotMap.pdp.getCurrent(2));
-		SmartDashboard.putNumber("PDP5", RobotMap.pdp.getCurrent(5));
-		SmartDashboard.putNumber("PDP6", RobotMap.pdp.getCurrent(6));
-		SmartDashboard.putNumber("PDP7", RobotMap.pdp.getCurrent(7));
-		
+		//SmartDashboard.putNumber("PDP0", RobotMap.pdp.getCurrent(0));
+		//SmartDashboard.putNumber("PDP1", RobotMap.pdp.getCurrent(1));
+		//SmartDashboard.putNumber("PDP2", RobotMap.pdp.getCurrent(2));
+		SmartDashboard.putNumber("PDP5 Current", RobotMap.pdp.getCurrent(5));
+		SmartDashboard.putNumber("PDP6 Current", RobotMap.pdp.getCurrent(6));
+		SmartDashboard.putNumber("PDP7 Current", RobotMap.pdp.getCurrent(7));
+		SmartDashboard.putNumber("PDP Voltage", RobotMap.pdp.getVoltage());
+
 	}
 
 	/**
